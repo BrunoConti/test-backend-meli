@@ -1,0 +1,6 @@
+{
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "eslint linebreak-style": [0, "error", "windows"]
+}
