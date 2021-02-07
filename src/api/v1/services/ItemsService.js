@@ -19,9 +19,12 @@ const getItems = async (data) => {
     });
   });
 
-  const categories = data.filters
-    ? data.filters.find((f) => f.id === 'category').values.map((c) => c.name)
-    : [];
+  const categories =
+    data.filters && data.filters.length
+      ? data.filters
+          .find((f) => f.id === 'category')
+          .values[0].path_from_root.map((c) => c.name)
+      : [];
 
   const response = await itemsSchema.validateAsync({
     author: {
