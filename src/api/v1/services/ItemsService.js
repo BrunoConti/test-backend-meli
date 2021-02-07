@@ -16,6 +16,7 @@ const getItems = async (data) => {
       picture: i.thumbnail,
       condition: i.condition,
       free_shipping: i.shipping.free_shipping,
+      address: i.address.state_name,
     });
   });
 

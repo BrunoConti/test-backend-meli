@@ -19,6 +19,7 @@ const itemSchema = Joi.object({
       picture: Joi.string(),
       condition: Joi.string(),
       free_shipping: Joi.boolean(),
+      address: Joi.string(),
     })
   ),
 });
