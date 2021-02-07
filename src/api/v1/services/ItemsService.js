@@ -1,4 +1,6 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable indent */
+/* eslint-disable operator-linebreak */
 const itemsSchema = require('../models/Items');
 
 const getItems = async (data) => {
